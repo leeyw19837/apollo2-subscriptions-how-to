@@ -1,5 +1,5 @@
 import {
-	addMockFunctionsToSchema,
+	// addMockFunctionsToSchema,
 	gql,
 	makeExecutableSchema
 } from "apollo-server";
@@ -12,6 +12,6 @@ const helloSchema: GraphQLSchema = makeExecutableSchema({
 		}
 	`
 });
-addMockFunctionsToSchema({ schema: helloSchema });
+// addMockFunctionsToSchema({ schema: helloSchema });
 
 export { helloSchema };

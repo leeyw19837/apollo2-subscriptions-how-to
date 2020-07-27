@@ -1,14 +1,14 @@
 import {
-	addMockFunctionsToSchema,
-	gql,
+	// addMocksToSchema,
 	makeExecutableSchema
 } from "apollo-server";
+
 import { GraphQLSchema } from "graphql";
-import { userType, userQuery } from "./schema";
+import { userType, userQuery, userMutation } from "./schema";
 
 const userSchema: GraphQLSchema = makeExecutableSchema({
-	typeDefs: [userType, userQuery]
+	typeDefs: [userType, userQuery, userMutation]
 });
-addMockFunctionsToSchema({ schema: userSchema });
+// addMocksToSchema({ schema: userSchema });
 
 export { userSchema };

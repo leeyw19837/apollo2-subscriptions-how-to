@@ -10,6 +10,15 @@ const userType = gql`
 		family_name: String
 		locale: String
 	}
+	
+	input UserInput {
+		email: String
+		name: String!
+		picture: String
+		given_name: String
+		family_name: String
+		locale: String
+	}
 `;
 
 export { userType };
